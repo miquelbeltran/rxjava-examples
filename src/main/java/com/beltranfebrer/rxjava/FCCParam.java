@@ -15,7 +15,7 @@ public class FCCParam {
     }
 
     public static String concatAndTransform(String a, String b,
-            Function<String, String> stringTransform) {
+                                            Function<String, String> stringTransform) {
         if (stringTransform != null) {
             a = stringTransform.apply(a);
             b = stringTransform.apply(b);

@@ -5,10 +5,10 @@ repositories {
 }
 
 dependencies {
-
+  compile 'io.reactivex:rxjava:1.0.10'
 }
 
-task execute(type:JavaExec) {
-  main = mainClass
-  classpath = sourceSets.main.runtimeClasspath
-}
+//task execute(type:JavaExec) {
+  //main = mainClass
+  //classpath = sourceSets.main.runtimeClasspath
+//}
