@@ -1,4 +1,4 @@
-package com.beltranfebrer.rxjava;
+package com.beltranfebrer.rxjava.functional;
 
 import java.util.function.Function;
 

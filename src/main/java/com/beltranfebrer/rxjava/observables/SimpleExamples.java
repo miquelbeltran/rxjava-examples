@@ -1,5 +1,6 @@
-package com.beltranfebrer.rxjava;
+package com.beltranfebrer.rxjava.observables;
 
+import com.beltranfebrer.rxjava.data.NumbersGenerator;
 import rx.Observable;
 import rx.schedulers.Schedulers;
 

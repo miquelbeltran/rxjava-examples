@@ -1,5 +1,6 @@
-package com.beltranfebrer.rxjava;
+package com.beltranfebrer.rxjava.observables;
 
+import com.beltranfebrer.rxjava.data.NumbersGenerator;
 import rx.Observable;
 import rx.schedulers.Schedulers;
 
@@ -20,7 +21,6 @@ public class SubscriptionAllOneThreadExample {
             observable
                     .flatMap(val -> Observable.just(val)
                             .subscribeOn(Schedulers.computation())
-                            .observeOn(Schedulers.io())
                             .map(i -> NumbersGenerator.fibonacci(i)))
                     .subscribe((integer -> {
                                 System.out.println("onNext thread entr: " + Thread.currentThread().getName());

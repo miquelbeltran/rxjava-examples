@@ -1,4 +1,4 @@
-package com.beltranfebrer.rxjava;
+package com.beltranfebrer.rxjava.data;
 
 import java.util.ArrayList;
 import java.util.List;
