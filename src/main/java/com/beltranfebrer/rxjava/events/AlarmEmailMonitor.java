@@ -4,12 +4,12 @@ package com.beltranfebrer.rxjava.events;
  * Created by Miquel Beltran on 21.04.16.
  * More on http://beltranfebrer.com
  */
-public class AlarmEmailMonitor {
+public class AlarmEmailMonitor extends AlarmsMonitor {
     private final EmailService emailService;
 
     public AlarmEmailMonitor(AlarmsSystem alarmsSystem, EmailService emailService) {
+        super(alarmsSystem);
         this.emailService = emailService;
-        alarmsSystem.subscribe(this::handleAlarm);
     }
 
     /**

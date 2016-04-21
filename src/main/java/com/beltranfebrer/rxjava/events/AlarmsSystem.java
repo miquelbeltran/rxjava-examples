@@ -23,8 +23,8 @@ public class AlarmsSystem {
         publishSubject.onNext(new AlarmEvent(what, severity));
     }
 
-    public void subscribe(Observer<AlarmEvent> observable) {
-        publishSubject.observeOn(Schedulers.newThread()).subscribe(observable);
+    public void subscribe(Observer<AlarmEvent> observer) {
+        publishSubject.observeOn(Schedulers.newThread()).subscribe(observer);
     }
 
     /**
